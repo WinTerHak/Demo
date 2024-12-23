@@ -1,0 +1,73 @@
+
+.head_main_page{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width:100%; 
+    height: 46px;
+    padding: 0 10px;
+}
+.interaction-of-user {
+    display: flex;
+    align-items:center;
+}
+.avatar-user {
+    width: 46px;
+    height: 46px;
+    margin-right: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid blue;
+    box-shadow: 0 0 0 2px black;
+    cursor: pointer;
+}
+.avatar-user img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+.avatar-container {
+    position: relative; 
+    display: inline-block; 
+}
+
+.menu {
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: none; 
+    z-index: 10; 
+    max-width: 200px; 
+    white-space: nowrap;
+    border-radius: 5px;
+    transform: translateX(20px) translateY(00);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.menu.show { 
+    display: block;
+    opacity: 1; 
+    transform: translateX(0) translateY(0); 
+}
+
+.menu a {
+    display: block; 
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+.menu a:hover {
+    background-color: #f0f0f0;
+}
+.picture_in_head_of_home_page{
+    background-image: url('picture/megumi-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100% ;
+    height: 20vh ; 
+    margin:5px 0px 0px 0px ;
+}
